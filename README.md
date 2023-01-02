@@ -1,13 +1,12 @@
 # Mastermind
 
-Regles del joc:
+<h3>Regles del joc</h3>
 
 El joc es desenvolupa en un tauler amb dos fitxes de dues mides diferents:
 
-• petites: Són de color blanc i negre i serveixen per indicar els errors i encerts.
+- petites: Són de color blanc i negre i serveixen per indicar els errors i encerts.
 
-• grans: S’utilitzen 9 fitxes de 9 colors diferents per generar el codi ocult i intentar
-         esbrinar-lo.
+- grans: S’utilitzen 9 fitxes de 9 colors diferents per generar el codi ocult i intentar esbrinar-lo.
            
 Un dels jugadors (jugador A) escull 4 fitxes grans de colors i que formarà el codi secret
 ocult. L’altre jugador (jugador B) ha d’esbrinar el codi secret. Primerament, agafa 4
@@ -21,27 +20,27 @@ El joc acaba quan s’encerta la combinació (és a dir, quan s’aconsegueix un
 quatre fitxes negres), o bé s’esgota el tauler (es tenen 10 intents).
 Per conveniència, codifiquem els colors amb els següents nombres:
 
-Blau: 1
+- Blau: **1**
 
-Groc: 2
+- Groc: **2**
 
-Vermell: 3
+- Vermell: **3**
 
-Verd: 4
+- Verd: **4**
 
-Marró: 5
+- Marró: **5**
 
-Rosa: 6
+- Rosa: **6**
 
-Violeta: 7
+- Violeta: **7**
 
-Taronja: 8
+- Taronja: **8**
 
-Cian: 9
+- Cian: **9**
 
 Les fitxes per marcar si una resposta és correcta o no les codificarem de la següent
 manera:
 
-• Les fitxes negres es representen amb el caràcter ’X’.
+- Les fitxes negres es representen amb el caràcter ’**X**’.
 
-• Les fitxes blanques amb el caràcter ’O’.
+- Les fitxes blanques amb el caràcter ’**O**’.
