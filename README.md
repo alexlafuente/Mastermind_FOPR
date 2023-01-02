@@ -14,7 +14,7 @@ Primerament, el jugador B agafa 4 fitxes de colors i planteja una possibilitat. 
 
 El joc acaba quan s’encerta la combinació (és a dir, quan s’aconsegueix una combinació amb quatre fitxes negres), o bé s’esgota el tauler (es tenen 10 intents).
 
-Per conveniència, codifiquem els colors amb els següents nombres:
+Per conveniència, els colors estan codificats amb els següents nombres:
 
 - Blau: **1**
 
