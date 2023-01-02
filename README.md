@@ -42,6 +42,6 @@ Cian: 9
 Les fitxes per marcar si una resposta és correcta o no les codificarem de la següent
 manera:
 
-• Les fitxes Negres es representen amb el caràcter ’X’.
+• Les fitxes negres es representen amb el caràcter ’X’.
 
-• Les fitxes Blanques amb el caràcter ’O’.
+• Les fitxes blanques amb el caràcter ’O’.
