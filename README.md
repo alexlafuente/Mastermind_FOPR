@@ -4,9 +4,9 @@ Regles del joc:
 
 El joc es desenvolupa en un tauler amb dos fitxes de dues mides diferents:
 
-• petites. Són de color blanc i negre i serveixen per indicar els errors i encerts.
-• grans.   S’utilitzen 9 fitxes de 9 colors diferents per generar el codi ocult i intentar
-           esbrinar-lo.
+• petites: Són de color blanc i negre i serveixen per indicar els errors i encerts.
+• grans: S’utilitzen 9 fitxes de 9 colors diferents per generar el codi ocult i intentar
+         esbrinar-lo.
            
 Un dels jugadors (jugador A) escull 4 fitxes grans de colors i que formarà el codi secret
 ocult. L’altre jugador (jugador B) ha d’esbrinar el codi secret. Primerament, agafa 4
