@@ -21,9 +21,9 @@ El joc es desenvolupa en un tauler amb dos fitxes de dues mides diferents:
            
 Un dels jugadors (jugador A) escull 4 fitxes grans de colors que formarà el codi secret ocult. L’altre jugador (jugador B) ha d’esbrinar el codi secret.
 
-Primerament, el jugador B agafa 4 fitxes de colors i planteja una possibilitat. El jugador A ha de respondre amb les fitxes petites. La resposta estarà formada com a màxim per 4 fitxes petites. Posarà una fitxa negra quan la fitxa de color estigui ben col·locada, i una fitxa petita blanca quan el color aparegui al codi ocult, però estigui mal col·locat. Si una fitxa gran no està al codi secret llavors no es posa cap fitxa.
+Primerament, el jugador B agafa 4 fitxes de colors i planteja una possibilitat. El jugador A ha de respondre amb les fitxes petites. La resposta estarà formada com a màxim per 4 fitxes petites. El jugador A posarà una fitxa negra quan la fitxa de color existeixi al codi ocult i estigui ben col·locada, i posarà una fitxa petita blanca quan el la fitxa de color aparegui al codi ocult, però estigui mal col·locada. Si una fitxa gran no està al codi secret, el jugador a no posarà cap fitxa.
 
-El joc acaba quan s’encerta la combinació (és a dir, quan s’aconsegueix una combinació amb quatre fitxes negres), o bé s’esgota el tauler (es tenen 10 intents).
+El joc acaba quan s’encerta la combinació (és a dir, quan el jugador B aconsegueix una combinació amb quatre fitxes negres), o quan s’omple tot el tauler (es tenen 10 intents).
 
 Per conveniència, els colors estan codificats amb els següents nombres:
 
@@ -45,7 +45,7 @@ Per conveniència, els colors estan codificats amb els següents nombres:
 
 - Cian: **9**
 
-Les fitxes per marcar si una resposta és correcta o no, les codifiquem de la següent manera:
+Les fitxes utilitzades per marcar si una resposta és correcta o no, estan codificades de la següent manera:
 
 - Les fitxes negres es representen amb el caràcter ’**X**’.
 
