@@ -1,6 +1,17 @@
+
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![Build passing](https://app.travis-ci.com/travis-ci/travis-web.svg?branch=master)]()
+
+![Logo](https://camo.githubusercontent.com/824ab59f0f7eff5585ea26cb01600b956575c85b87824e362738a74cd52c0c06/68747470733a2f2f7777772e7570632e6564752f636f6d756e69636163696f2f63612f6964656e74697461742f646573636172726567612d6172786975732d677261666963732f666974786572732d6d617263612d7072696e636970616c2f7570632d706f73697469752d70333030352e706e67)
+
 # Mastermind
 
-<h3>Regles del joc</h3>
+
+
+Aquest joc conforma la meva pràctica de l'assignatura de Fonaments de la Programació 
+a l'EPSEVG (UPC).
+
+## Regles del joc
 
 El joc es desenvolupa en un tauler amb dos fitxes de dues mides diferents:
 
