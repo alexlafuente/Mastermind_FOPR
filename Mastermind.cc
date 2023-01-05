@@ -70,7 +70,7 @@ vector<int> ordena(const vector<int> &aux){
 // Exp: A partir del nombre natural amb 4 caràcters introduit pel jugador, crea un vector amb la seqüència.
 // Pre: Agafa el booleà jugadorA, que és l'indicador del jugador i el nombre de l'intent > 0.
 // Post: Retorna la seqüència del codi/jugada.
-vector<int> separa(bool jugadorA, int intent){
+vector<int> creaVector(bool jugadorA, int intent){
 //  Declarem un vector que contindrà la seqüència del codi/jugada.
     vector<int> separat;
     int n;
@@ -99,6 +99,25 @@ vector<int> separa(bool jugadorA, int intent){
     separat = ordena(aux);
     
     return separat;
+}
+
+// Exp: Detecta si un nombre és igual a algun element d'un vector.
+// Pre: 0 < i < 10.
+// Post: Retorna trobat si random és igual a un element del codi.
+bool hiHaRepetits(const vector<int> &codi, int random){
+    bool trobat = false;
+    int i = 0;
+    int mida = codi.size();
+    while(not trobat and i < mida){
+        if(codi[i] == random){
+            trobat = true;
+        }
+        else{
+            ++i;
+        }
+    }
+
+    return trobat;
 }
 
 // Exp: Detecta si hi ha nombres repetits al vector o si algun nombre és igual a 0.
@@ -136,9 +155,9 @@ bool hiHaRepetitsOzeros(const vector<int> &codi){
 // Pre: min < max
 // Post: retorna un nombre generat aleatòriament entre min i max.
 int aleatori(int min, int max){
-    static std::random_device device{};
-    static std::default_random_engine engine{ device() };
-    std::uniform_int_distribution<int> distribution{ min, max };
+    static random_device device{};
+    static default_random_engine engine{ device() };
+    uniform_int_distribution<int> distribution{ min, max };
     return distribution(engine);
 }
 
@@ -151,13 +170,17 @@ vector<int> codiRandom(){
 //  Declarem el nombre mínim i màxim, els quals determinaran el rang del nombre generat aleatoriament.
     int min = 1;
     int max = 9;
+    int random;
     for(int i = 0; i < 4; ++i){
 //      Inv: l'element i de codi, conté un nombre generat per la funció aleatori.
-        codi.push_back(aleatori(min, max));
-        while(hiHaRepetitsOzeros(codi)){
-//          Inv: l'element i de codi, conté un nombre generat per la funció aleatori.
-            codi[i] = aleatori(min, max);
+        random = aleatori(min, max);
+        if(i != 0){
+//      A la primera iteració, el codi no tindrá cap element, per tant no s'executara el següent bucle.
+            while(hiHaRepetits(codi, random)){
+            random = aleatori(min, max);
+            }
         }
+    codi.push_back(random);
     }
     
     return codi;
@@ -177,7 +200,7 @@ vector<int> codiManual(){
  *      trobat és vertader si la mida del vector és 4 i no n'hi han repetits o zeros.
  */
         cout << "Jugador A, escull el codi secret: " << endl;
-        codi = separa(jugadorA, trobat);
+        codi = creaVector(jugadorA, trobat);
         int mida = codi.size();
         if(mida == 4 and not hiHaRepetitsOzeros(codi)){
             trobat = true;
@@ -222,7 +245,7 @@ void joc(bool aleatori){
             jugades[intent - 1] conté la seqüència escollida pel jugador B, quan a aquesta no hi ha nombres repetits o zeros, i té 4 elements.
 */
             cout << "Jugador B, intent " << intent << ": " << endl;
-            jugada = separa(jugadorA, intent);
+            jugada = creaVector(jugadorA, intent);
             int mida = jugada.size();
             if(mida == 4 and not hiHaRepetitsOzeros(jugada)){
                 correcte = true;
