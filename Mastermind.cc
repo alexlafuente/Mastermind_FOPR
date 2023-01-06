@@ -40,10 +40,10 @@ vector<char> encerts(const vector<int> &codi, const vector<int> &jugada){
             else if(jugada[i] == codi[j]){
                 sortida[i] = 'O';
             }
-            if(sortida[i] != 'X' and sortida[i] != 'O'){
-                sortida[i] = '-';
-            }
         }
+        if(sortida[i] != 'X' and sortida[i] != 'O'){
+            sortida[i] = '-';
+        } 
     }
     
     return sortida;
