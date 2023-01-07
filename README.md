@@ -47,6 +47,14 @@ Per conveniència, els colors estan codificats amb els següents nombres:
 
 Les fitxes utilitzades per marcar si una resposta és correcta o no, estan codificades de la següent manera:
 
-- Les fitxes negres es representen amb el caràcter ’**X**’.
+- Les fitxes negres es representen amb el caràcter ’**X**’
 
-- Les fitxes blanques amb el caràcter ’**O**’.
+- Les fitxes blanques amb el caràcter ’**O**’
+
+## Resum
+
+El joc comença demanant al jugador A, un codi de 4 xifres (de nombres entre l'1 i el 9). A continuació, el jugador B té 10 intents per tractar d'endevinar el codi. Després de cada intent, es mostrarà la correspondència entre els nombres de la jugada i el codi secret:
+
+- Si el nombre apareix al codi i està a la posició correcta, es mostrarà una ’**X**’
+- Si el nombre apareix al codi, però està en una posició incorrecta, es mostrarà una ’**O**’
+- Si el nombre no apareix al codi, es mostrarà un ’**-**’
