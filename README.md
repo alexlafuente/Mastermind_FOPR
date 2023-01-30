@@ -53,7 +53,7 @@ Les fitxes utilitzades per marcar si una resposta és correcta o no, estan codif
 
 ## Resum
 
-El joc comença demanant al jugador A, un codi de 4 xifres (de nombres entre l'1 i el 9). A continuació, el jugador B té 10 intents per tractar d'endevinar el codi. Després de cada intent, es mostrarà la correspondència entre els nombres de la jugada i el codi secret:
+El joc comença demanant al jugador A, un codi de 4 xifres (entre l'1 i el 9), que no es poden repetir. A continuació, el jugador B té 10 intents per tractar d'endevinar el codi. Després de cada intent, es mostrarà la correspondència entre els nombres de la jugada i el codi secret:
 
 - Si el nombre apareix al codi i està a la posició correcta, es mostrarà una ’**X**’
 - Si el nombre apareix al codi, però està en una posició incorrecta, es mostrarà una ’**O**’
